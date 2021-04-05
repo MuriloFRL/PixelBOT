@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.BaseClasses.BaseCriterion">
+            <summary>
+             Base class for creating criterias
+             Make sure to mark all your classes with the [Serializable] attribute!
+            </summary>
+        </member>
+        <member name="T:Plugin.Interfaces.IPluginCriterion">
+            <summary>
+            The interface for Plugin Criterias.
+            Make sure to mark all your classes with the [Serializable] attribute!
+            </summary>
+        </member>
+        <member name="M:Plugin.Interfaces.IPluginCriterion.IsSatisfied">
+            <summary>
+            Logic to determin whether or not this criteria has been met
+            </summary>
+        </member>
+        <member name="P:Plugin.Interfaces.IPluginCriterion.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:Plugin.Interfaces.IPluginCriterion.Arguments">
+            <summary>
+            Required Arguments
+            </summary>
+        </member>
+        <member name="E:Plugin.Interfaces.IPluginCriterion.SetVariableEvent">
+            <summary>
+            Event for saving values in Blue Eyes variables
+            </summary>
+        </member>
+        <member name="M:Plugin.BaseClasses.BaseCriterion.InitArguments">
+            <summary>
+            Initializes the arguments for this plugin.
+            Example: AddArguments(new PluginArgument(ArgumentType.Text, 100, "Argument name", "Argument description"));
+            </summary>
+        </member>
+        <member name="M:Plugin.BaseClasses.BaseCriterion.IsSatisfied">
+            <summary>
+            This method will be executed to determine if the criterion has been met.
+            </summary>
+        </member>
+        <member name="M:Plugin.BaseClasses.BaseCriterion.AddArguments(Plugin.Classes.PluginArgument[])">
+            <summary>
+            Adds an argument to the criterion.
+            The arguments will be populated from inside the Blue Eye Editor.
+            </summary>
+            <param name="arguments"></param>
+        </member>
+        <member name="M:Plugin.BaseClasses.BaseCriterion.SetVariable(System.String,System.String)">
+            <summary>
+            Sets a variable in the executing Macro.
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="P:Plugin.BaseClasses.BaseCriterion.Name">
+            <summary>
+            The name of the criterion
+            </summary>
+        </member>
+        <member name="P:Plugin.BaseClasses.BaseCriterion.Arguments">
+            <summary>
+            The list of arguments
+            </summary>
+        </member>
+        <member name="E:Plugin.BaseClasses.BaseCriterion.SetVariableEvent">
+            <summary>
+             Event used to set variables in the executing Macro.
+             You may use the SetVariable method instead of invoking this event directly.
+            </summary>
+        </member>
+        <member name="T:Plugin.Classes.PluginArgument">
+            <summary>
+             Arguments for custom Criterias and Instructions
+            </summary>
+        </member>
+        <member name="M:Plugin.Classes.PluginArgument.#ctor(Plugin.Classes.PluginArgument.ArgumentType,System.Int32,System.String,System.String)">
+            <summary>
+            Argument
+            </summary>
+            <param name="type">The type of the argument</param>
+            <param name="defaultLength">The default length of the argument input, measured in number of characters. This value is used to calculate the optimal size of the input box in wizard view</param>
+            <param name="displayName">The Argument Display Name, this value will be displayed before the input box in wizard view and used for intellisense, If the argument type is one of the following: "X/Y-Coordinate", "R/G/B-Color", "Range", "FilePath", or "FolderPath" this value will be ignored.</param>
+            <param name="description">The Argument Description</param>
+        </member>
+        <member name="M:Plugin.Classes.PluginArgument.#ctor(Plugin.Classes.PluginArgument.ArgumentType,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Argument
+            </summary>
+            <param name="type">The type of the argument</param>
+            <param name="defaultLength">The default length of the argument input, measured in number of characters. This value is used to calculate the optimal size of the input box in wizard view</param>
+            <param name="displayName">The Argument Display Name, this value will be displayed before the input box in wizard view and used for intellisense, If the argument type is one of the following: "X/Y-Coordinate", "R/G/B-Color", "Range", "FilePath", or "FolderPath" this value will be ignored.</param>
+            <param name="description">The Argument Description</param>
+            <param name="postfix">Postfix, this value will be displayed after the input box in wizard view - Value can be null, If the argument type is one of the following: "X/Y-Coordinate", "R/G/B-Color", "Range", "FilePath", or "FolderPath" this value will be ignored.</param>
+        </member>
+        <member name="P:Plugin.Classes.PluginArgument.Type">
+            <summary>
+            The type of the argument
+            </summary>
+        </member>
+        <member name="P:Plugin.Classes.PluginArgument.DisplayName">
+            <summary>
+            The Argument Display Name, this value will be displayed before the input box in wizard view and used for intellisense
+            If the argument type is one of the following: "X/Y-Coordinate", "R/G/B-Color", "Range", "FilePath", or "FolderPath" this value will be ignored.
+            </summary>
+        </member>
+        <member name="P:Plugin.Classes.PluginArgument.Description">
+            <summary>
+            The Argument Description
+            </summary>
+        </member>
+        <member name="P:Plugin.Classes.PluginArgument.Postfix">
+            <summary>
+            Postfix, this value will be displayed after the input box in wizard view
+            Value can be null
+            If the argument type is one of the following: "X/Y-Coordinate", "R/G/B-Color", "Range", "FilePath", or "FolderPath" this value will be ignored.
+            </summary>
+        </member>
+        <member name="P:Plugin.Classes.PluginArgument.DefaultLength">
+            <summary>
+            The default length of the argument input, measured in number of characters
+            This value is used to calculate the optimal size of the input box in wizard view
+            </summary>
+        </member>
+        <member name="P:Plugin.Classes.PluginArgument.Value">
+            <summary>
+            Gets or Sets the current value of the argument
+            </summary>
+        </member>
+        <member name="T:Plugin.Classes.PluginArgument.ArgumentType">
+            <summary>
+            Valid argument types
+            </summary>
+        </member>
+        <member name="T:Plugin.BaseClasses.BaseInstruction">
+            <summary>
+             Base class for creating instuctions
+             Make sure to mark all your classes with the [Serializable] attribute!
+            </summary>
+        </member>
+        <member name="T:Plugin.Interfaces.IPluginInstruction">
+            <summary>
+            The interface for Plugin Instructions.
+            Make sure to mark all your classes with the [Serializable] attribute!
+            </summary>
+        </member>
+        <member name="M:Plugin.Interfaces.IPluginInstruction.Execute">
+            <summary>
+            Logic to be performed whenever this instruction is executed
+            </summary>
+        </member>
+        <member name="P:Plugin.Interfaces.IPluginInstruction.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:Plugin.Interfaces.IPluginInstruction.Arguments">
+            <summary>
+            Required Arguments
+            </summary>
+        </member>
+        <member name="E:Plugin.Interfaces.IPluginInstruction.SetVariableEvent">
+            <summary>
+            Event for saving values in Blue Eyes variables
+            </summary>
+        </member>
+        <member name="M:Plugin.BaseClasses.BaseInstruction.InitArguments">
+            <summary>
+            Initializes the arguments for this plugin.
+            Example: AddArguments(new PluginArgument(ArgumentType.Text, 100, "Argument name", "Argument description"));
+            </summary>
+        </member>
+        <member name="M:Plugin.BaseClasses.BaseInstruction.Execute">
+            <summary>
+            This method will be executed at runtime.
+            </summary>
+        </member>
+        <member name="M:Plugin.BaseClasses.BaseInstruction.AddArguments(Plugin.Classes.PluginArgument[])">
+            <summary>
+            Adds an argument to the instruction.
+            The arguments will be populated from inside the Blue Eye Editor.
+            </summary>
+            <param name="arguments"></param>
+        </member>
+        <member name="M:Plugin.BaseClasses.BaseInstruction.SetVariable(System.String,System.String)">
+            <summary>
+            Sets a variable in the executing Macro.
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="P:Plugin.BaseClasses.BaseInstruction.Name">
+            <summary>
+            The name of the instruction
+            </summary>
+        </member>
+        <member name="P:Plugin.BaseClasses.BaseInstruction.Arguments">
+            <summary>
+            The list of arguments
+            </summary>
+        </member>
+        <member name="E:Plugin.BaseClasses.BaseInstruction.SetVariableEvent">
+            <summary>
+             Event used to set variables in the executing Macro.
+             You may use the SetVariable method instead of invoking this event directly.
+            </summary>
+        </member>
+        <member name="T:Plugin.Classes.SetVariableEventArgs">
+            <summary>
+            Event argument for setting a variable inside Blue Eye
+            </summary>
+        </member>
+        <member name="M:Plugin.Classes.SetVariableEventArgs.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Plugin.Classes.SetVariableEventArgs.#ctor(System.String,System.String)">
+            <summary>
+            Constructor for creating a valid SetVariableEventArgs
+            </summary>
+            <param name="key">The key of the variable to set</param>
+            <param name="value">The value of the variable to set</param>
+        </member>
+        <member name="P:Plugin.Classes.SetVariableEventArgs.Key">
+            <summary>
+            The key of the variable to set
+            </summary>
+        </member>
+        <member name="P:Plugin.Classes.SetVariableEventArgs.Value">
+            <summary>
+            The value of the variable to set
+            </summary>
+        </member>
+    </members>
+</doc>
