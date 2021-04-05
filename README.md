@@ -26,7 +26,7 @@ Instalação:
 	
 	3- Abrir o data.grf do RO no GRF Editor.
 	
-	4- Merge data.grf com tilemap.grf dentro da pasta grf do PixelBOT.
+	4- Merge data.grf com tilemap.grf dentro da pasta grf do PixelBOT https://drive.google.com/file/d/1aItmBSCTVfMjbKI-Xq3xduy-R3H-ClCQ/.
 	
 	5- Dentro da pasta grf do PixelBOT encontra-se diversos arquivos como btn_ok, btn_ok_a, etc.. arraste-os para dentro da pasta data > texture > À¯ÀúÀÎÅÍÆäÀÌ½º no grf editor.
 
