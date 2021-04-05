@@ -1,0 +1,59 @@
+Info: [11:18:59] //////////////////////////////////////////////////////////////
+Info: [11:18:59] //     ____                    ______    _ _ _              //
+Info: [11:18:59] //    |  _ \                  |  ____|  | (_) |             //
+Info: [11:18:59] //    | |_) |_ __ _____      _| |__   __| |_| |_            //
+Info: [11:18:59] //    |  _ <| '__/ _ \ \ /\ / /  __| / _` | | __|           //
+Info: [11:18:59] //    | |_) | | | (_) \ V  V /| |___| (_| | | |_            //
+Info: [11:18:59] //    |____/|_|  \___/ \_/\_/ |______\__,_|_|\__|	     //
+Info: [11:18:59] //                                                          //
+Info: [11:19:00] //                   Coded by:      Borf                    //
+Info: [11:19:00] //                   Fixes by:      Henko                   //
+Info: [11:19:00] //                                                          //
+Info: [11:19:00] //                     Libraries used:                      //
+Info: [11:19:00] //            - OpenGL                                      //
+Info: [11:19:00] //            - SDL                                         //
+Info: [11:19:00] //            - zlib                                        //
+Info: [11:19:00] //            - gd2                                         //
+Info: [11:19:00] //            - (win)sockets                                //
+Info: [11:19:00] //                                                          //
+Info: [11:19:00] //////////////////////////////////////////////////////////////
+Info: [11:19:00] 
+Info: [11:19:00] 
+Info: [11:19:00]        Public Beta Release, don't bug about any bugs...
+Info: [11:19:00]        Version 586
+Info: [11:19:00] 
+Error: [11:19:00] FS: Error opening grf C:\Users\muril\Desktop\Ragnarok\rdata.grf
+Info: [11:19:01] FS: Done reading grf  C:\Users\muril\Desktop\Ragnarok\data.grf
+Info: [11:19:01] Initializing Graphics
+Info: [11:19:03] Opening general textures
+Info: [11:19:03] Loading font data/fonts/tahoma.tga
+Info: [11:19:03] Done loading font data/fonts/tahoma.tga
+Info: [11:19:03] Initializing WM
+Info: [11:19:03] Loading font data/fonts/tahoma.tga
+Info: [11:19:03] Done loading font data/fonts/tahoma.tga
+Info: [11:19:03] Window Manager initialized
+Info: [11:19:03] Loading plugin: '3ds2rsm.dll'
+Info: [11:19:03] Loading plugin: 'clearmap.dll'
+Info: [11:19:03] Loading plugin: 'gat.dll'
+Info: [11:19:03] Loading plugin: 'generators.dll'
+Info: [11:19:03] Loading plugin: 'lightmap.dll'
+Info: [11:19:03] Loading file data/keymap.txt
+Info: [11:19:03] Done Loading file data/keymap.txt
+Info: [11:19:03] Loading file data/effects.txt
+Info: [11:19:03] Done Loading file data/effects.txt
+Info: [11:19:03] Done Initializing
+Info: [11:19:44] World: Loading C:\Users\n\Desktop\Ragnarokdata\alde_tt02.gnd
+Info: [11:19:45] World: Done loading gnd
+Info: [11:19:45] World: Loading C:\Users\n\Desktop\Ragnarokdata\alde_tt02.rsw
+Info: [11:19:45] World: Done loading C:\Users\n\Desktop\Ragnarokdata\alde_tt02.rsw
+Info: [11:19:45] World: Loading C:\Users\n\Desktop\Ragnarokdata\alde_tt02.gat
+Info: [11:19:45] World: Done loading C:\Users\n\Desktop\Ragnarokdata\alde_tt02.gat
+Info: [11:19:45] World: Done loading C:\Users\n\Desktop\Ragnarokdata\alde_tt02
+Info: [11:19:45] Deleting window File...
+Info: [11:19:45] Closed a window
+Info: [11:19:50] Selected Node RO
+Info: [11:19:58] Selected Node 나무잡초꽃
+Info: [11:19:58] Selected Node 나무잡초꽃
+Info: [11:19:59] Selected Node 나무잡초꽃
+Info: [11:20:42] Selected Node 기타마을내부
+Info: [12:23:05] TextureCache: No textures left (that's a good thing when you're closing down)
